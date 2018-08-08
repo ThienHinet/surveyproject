@@ -21,28 +21,38 @@ public class UsersInFor implements Serializable
     @Id
     @GeneratedValue
     @javax.persistence.Id
+    @Column(name="USER_ID")
     private long usersId;
-
+    @Column(name="USER_NAME")
     private String userName;
-    
+    @Column(name="PASS_WORD")
     private String passWord;
+    @Column(name="FULL_NAME")
     private String fullName;
-   
+    @Column(name="USER_TYPE")
     private String usersType;
-  
+    @Column(name="STATUS")
     private Integer status;
+    @Column(name="EMAIL")
+    private String email;
+    @Column(name="NUMBER_PHONE")
+    private String numberphone;
 
     public UsersInFor() {
     }
 
-    public UsersInFor(long usersId, String userName, String passWord, String fullName, String usersType, Integer status) {
+    public UsersInFor(long usersId, String userName, String passWord, String fullName, String usersType, Integer status, String email, String numberphone) {
         this.usersId = usersId;
         this.userName = userName;
         this.passWord = passWord;
         this.fullName = fullName;
         this.usersType = usersType;
         this.status = status;
+        this.email = email;
+        this.numberphone = numberphone;
     }
+
+  
     
     public long getUsersId() {
         return usersId;
@@ -89,6 +99,22 @@ public class UsersInFor implements Serializable
 
     public void setStatus(Integer status) {
         this.status = status;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getNumberphone() {
+        return numberphone;
+    }
+
+    public void setNumberphone(String numberphone) {
+        this.numberphone = numberphone;
     }
     
     

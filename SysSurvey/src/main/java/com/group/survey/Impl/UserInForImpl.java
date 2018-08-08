@@ -3,17 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.group.survey.dao;
-
+package com.group.survey.Impl;
 import com.group.survey.entity.UsersInFor;
-import java.util.List;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  *
  * @author thienha
  */
-public interface UsersInForDAO {
-   public void themUsers(UsersInFor usersInFor);
- 
-   
+@Transactional
+public class UserInForImpl extends Class<UsersInFor>{
+    
 }

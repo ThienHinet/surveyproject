@@ -27,8 +27,9 @@
             </beans:list>
         </beans:property>
     </beans:bean>
+    
 	
-	<context:component-scan base-package="com.group.survey.Controller" />
+	<context:component-scan base-package="com.group.survey" />
 	
     <beans:bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
         <beans:property name="definitions">
@@ -37,6 +38,7 @@
             </beans:list>
         </beans:property>
         <beans:property name="preparerFactoryClass" value="org.springframework.web.servlet.view.tiles3.SpringBeanPreparerFactory"/>
-    </beans:bean>	
-	
+    </beans:bean>
+    <beans:bean id="surveyService" class="com.group.survey.Impl.UserInForImpl"></beans:bean>	
+    <beans:bean id="surveyDao" class="com.group.survey.Service.UserInForServiceImpl"></beans:bean>
 </beans:beans>

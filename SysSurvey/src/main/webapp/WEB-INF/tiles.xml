@@ -19,5 +19,11 @@
         <put-attribute name="menu" value=""/>
         <put-attribute name="content" value="/WEB-INF/views/admin/users/login.jsp"/>
     </definition>
+       <definition name="register" extends="master.page">
+        <put-attribute name="header" value=""/>
+        <put-attribute name="menu" value=""/>
+        <put-attribute name="content" value="/WEB-INF/views/admin/users/register.jsp"/>
+    </definition>
+    
     
 </tiles-definitions>

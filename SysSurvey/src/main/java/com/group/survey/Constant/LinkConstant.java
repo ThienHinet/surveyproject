@@ -14,4 +14,8 @@ public class LinkConstant {
   public static final String LINKHOME="index";
   public static final String LOGIN_PAGE="/login";
   public static final String LINK_LOGIN="login";
+  public static final String REGISTER_PAGE="/register";
+  public static final String LINK_REGISTER="register";
+  public static final String SUBMIT_REGISTER="/registerUser";
+  public static final String USER_STUDENT="student";
 }

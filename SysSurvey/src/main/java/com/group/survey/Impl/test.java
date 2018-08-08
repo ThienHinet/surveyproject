@@ -5,8 +5,11 @@
  */
 package com.group.survey.Impl;
 
-import com.group.survey.dao.UsersInForDAO;
+
+
+
 import com.group.survey.entity.UsersInFor;
+import java.security.NoSuchAlgorithmException;
 
 /**
  *
@@ -14,16 +17,10 @@ import com.group.survey.entity.UsersInFor;
  */
 public class test {
     public static void main(String[] args) {
-        UsersInForDAO users=new UsersInforImpl();
-        UsersInFor u=new UsersInFor();
-        u.setFullName("a");
-        u.setPassWord("a");
-        u.setStatus(1);
-        u.setUserName("a");
-        u.setUsersType("a");
-        users.themUsers(u);
-        
-        
-        
+        UserInForImpl u=new UserInForImpl();
+    UsersInFor use=new UsersInFor();
+   use.setFullName("a");
+   u.insert(use);
     }
+  
 }
