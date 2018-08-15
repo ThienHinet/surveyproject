@@ -24,7 +24,7 @@
                                 <input class="form-control" id="usersname" placeholder="EMAIL" name="email" type="text" autofocus required="required">
                             </div>
                             <div class="form-group">
-                                <font color="red"><h6 id="valUsersName"></h6></font>
+                                <font color="red"><h6 id="valUsersName">${error}</h6></font>
                                 <input class="form-control" id="usersname" placeholder="USER NAME" name="usersname" type="text" autofocus required="required">
                             </div>
                             <div class="form-group">

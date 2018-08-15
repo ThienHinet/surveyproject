@@ -23,6 +23,13 @@
         <put-attribute name="header" value=""/>
         <put-attribute name="menu" value=""/>
         <put-attribute name="content" value="/WEB-INF/views/admin/users/register.jsp"/>
+        
+    </definition>
+     <definition name="listManager" extends="master.page">
+        <put-attribute name="header" value="/WEB-INF/views/template/header.jsp"/>
+        <put-attribute name="menu" value="/WEB-INF/views/template/menu.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/admin/users/list_manager.jsp"/>
+        
     </definition>
     
     

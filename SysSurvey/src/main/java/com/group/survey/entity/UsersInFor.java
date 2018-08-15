@@ -9,13 +9,15 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Table;
 import org.springframework.data.annotation.Id;
 
 /**
  *
  * @author thienha
  */
-@Entity(name = "USER_INFO")
+@Entity(name = "UsersInFor")
+@Table(name ="USER_INFO" )
 public class UsersInFor implements Serializable
 {
     @Id
